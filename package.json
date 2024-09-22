@@ -1,7 +1,15 @@
 {
-  "name": "lib",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-ttsx",
+  "version": "1.0.1",
+  "description": "This package provides a set of reusable React components, including buttons, alerts, and spinners, to help you quickly build and style your React applications. The components are designed to be highly customizable and easy to integrate into your projects.",
+  "main": "dist/index.js",
+  "author": "Black | 4qf_",
+  "private": false,
+  "keywords": [
+    "react",
+    "react.tsx",
+    "react tsx"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -10,18 +18,16 @@
     "@types/node": "^16.18.108",
     "@types/react": "^18.3.8",
     "@types/react-dom": "^18.3.0",
+    "bootstrap-icons": "^1.11.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "repository": "https://github.com/adhammenesy/react.tsx",
+  "homepage": "https://github.com/adhammenesy/react.tsx",
   "eslintConfig": {
     "extends": [
       "react-app",

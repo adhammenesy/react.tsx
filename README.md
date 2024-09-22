@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# React TSX NPM Package
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This package provides a set of reusable React components, including buttons, alerts, and spinners, to help you quickly build and style your React applications. The components are designed to be highly customizable and easy to integrate into your projects.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+npm:
+```bash
+npm install react-jsx-components
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Usage
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+- Types :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Buttons:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Primary = 1,
+    Secondary = 2,
+    Success = 3,
+    Danger = 4,
+    Warning = 5,
+    Info = 6,
+    Light = 7,
+    Dark = 8
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Alert:
 
-### `npm run eject`
+    Primary = 1,
+    Secondary = 2,
+    Success = 3,
+    Danger = 4,
+    Warning = 5,
+    Info = 6,
+    Dark = 7
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Spinner ( Loading ): 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    1 = Defualt Spinner Type
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Buttons:
+```tsx
+import { Button } from "react.tsx"
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+const MyButton = new Button(2).build() // Types From 1 To 8
+
+export default function App() {
+  return <MyButton />
+}
+```
+
+- Spinner 
+```tsx 
+import { Spinner } from "react.tsx"
+
+const MySpinner = new Spinner().build() // Types ( 1 )
+
+export default function App() {
+  return <MySpinner />
+}
+```
+
+
+- Alert 
+```tsx 
+import { Alert } from "react.tsx"
+
+const MyAlert = new Alert(1).build() // Types From 1 To 7
+
+export default function App() {
+  return <MyAlert />
+}
+```
+
+## Contact With The Author
+
+- Discord Userame: ( 4qf_ )
