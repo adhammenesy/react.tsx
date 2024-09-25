@@ -8,7 +8,7 @@ This package provides a set of reusable React components, including buttons, ale
 
 npm:
 ```bash
-npm install react-jsx-components
+npm install react-ttsx
 ```
 
 
